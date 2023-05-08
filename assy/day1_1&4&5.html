@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my web</title>
+    <style>
+        body {
+
+            background-color: antiquewhite;
+            margin: 20px;
+
+        }
+
+        body>header {
+
+            background-color: blueviolet;
+            margin: 30px;
+
+        }
+
+        nav {
+
+            margin: 30px;
+
+        }
+
+        main>section>h2 {
+
+            background-color: rgb(199, 178, 200);
+            margin-left: 666px;
+            margin-right: 666px;
+
+
+
+        }
+
+        main>section>p {
+
+
+            margin-left: 666px;
+
+
+
+        }
+
+        body>aside {
+
+            float: right;
+            margin: 40px;
+            margin-bottom: 999px;
+            margin-top: -300px;
+
+
+
+        }
+        aside>p{
+            margin-left: 5px;
+        }
+
+        footer {
+
+
+            margin-top: 222px;
+            margin-left: 150px;
+
+        }
+        video{
+
+            margin: 30px;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    my audio <audio src="audio/bgsound.mp3" id="aud"  ></audio>
+    
+    <input type="button" value="play" onclick="audioPlay()"> 
+    <input type="button" value="pause" onclick="audiopause()">
+
+
+     <video src="video/sample.mp4" controls  ></video>
+    
+
+
+    <header>
+        <h1>profile</h1>
+    </header>
+    <nav>
+        <a href="#">Courses</a>
+        <a href="#">skils</a>
+        <a href="#">volunter</a>
+    </nav>
+    <main>
+
+        <section>
+            <h2>education</h2>
+            <p> i study at computer and info tec</p>
+        </section>
+
+        <section>
+            <h2>hoby</h2>
+            <p> i like travling</p>
+        </section>
+        <section>
+            <h2>design</h2>
+            <p>i work with figma </p>
+        </section>
+
+
+    </main>
+    <aside>
+        <h2>other</h2>
+        <p>asuit</p>
+    </aside>
+    <footer>
+        @yaraessam
+    </footer>
+
+
+    <script>
+        function audioPlay()
+        {
+    
+            document.getElementById("aud").play()  
+        }
+      function audiopause()
+      {
+      document.getElementById("aud").pause()
+      }
+    
+    </script>
+
+</body>
+
+</html>

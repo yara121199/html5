@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" style="width:700px;height:400px;border:2px solid red">
+        
+    </canvas>
+    <img src="sad.png" id="img" onhover="dd()"/>   
+       
+    <script>
+        var canvas=document.getElementById("myCanvas");
+      
+        var ctx = canvas.getContext("2d");
+       
+       
+        var img=new Image();
+        img.src="sad.png";
+        var img2=new Image();
+        img2.src="smiley.png";
+        img2.onload
+        img.onload=function(){
+            ctx.drawImage(img,50,50,100,100);
+        }
+
+       
+       function dd()
+       {
+
+        ctx.drawImage(img2,50,50,100,100);
+
+       }
+
+    </script>
+</body>
+</html>
